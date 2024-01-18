@@ -1,0 +1,38 @@
+package quiz;
+import java.util.Scanner;
+public class calculator {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Scanner scn=new Scanner(System.in);
+
+System.out.println("KINDLY USE THIS OPERATORS +,-,*,/");
+
+System.out.println("enter the number A ");
+    int A=scn.nextInt();
+System.out.println("enter the number B ");
+int B=scn.nextInt();
+System.out.println("enter the operator");
+char operator=scn.next().charAt(0);
+switch (operator) {
+case '+':
+	System.out.println("addition of two numbers : "+ (A+B));
+	break;
+case '-':
+	System.out.println("SUBTRACTION of two numbers : "+(A-B));
+	break;
+case '*':
+	System.out.println("MULTIPLICATION of two numbers : "+(A*B));
+	break;
+case '/':
+	System.out.println("DIVISION of two numbers : "+(A/B));
+	break;
+
+default:
+	System.out.println("INVALID");
+	break;
+}
+
+	}
+
+}
